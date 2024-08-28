@@ -8,5 +8,5 @@ SELECT
     END AS Generation,
     Gender,
     COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Participants) AS Percentage
-FROM Participants
+FROM People
 GROUP BY Generation, Gender;
